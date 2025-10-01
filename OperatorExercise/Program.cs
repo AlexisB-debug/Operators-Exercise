@@ -31,11 +31,11 @@
         {
             Console.WriteLine("int i = 3\n int j = 4\n int k = ++i * j++\n What's the value of int k?");
             int greenCheckMark = int.Parse(Console.ReadLine());
-            if (greenCheckMark = RedCrossMark())
+            if (greenCheckMark == RedCrossMark())
             {
-                Console.ReadLine("Green Check Mark!");
+                Console.WriteLine("Green Check Mark!");
             }
-            else if (greenCheckMark != RedCrossMark)
+            else if (greenCheckMark != RedCrossMark())
             {
                 Console.WriteLine("Oops, Red Cross Mark! The correct answer is {greenCheckMark}!");
             }
