@@ -19,6 +19,8 @@
             Console.WriteLine("What's the radius of the circle?");
             double radius = double.Parse(Console.ReadLine());
             Console.WriteLine($"The area of the circle whose radius is {radius} is {AreaOfCircle(radius)}");
+
+            ThoughtExercise();
         }
 
         static double AreaOfCircle(double radius)
@@ -37,7 +39,11 @@
             }
             else if (greenCheckMark != RedCrossMark())
             {
-                Console.WriteLine("Oops, Red Cross Mark! The correct answer is {greenCheckMark}!");
+                Console.WriteLine($"Oops, Red Cross Mark! The correct answer is {RedCrossMark()}!");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input!");
             }
         }
 
